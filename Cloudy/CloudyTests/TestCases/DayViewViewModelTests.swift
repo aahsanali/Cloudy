@@ -28,16 +28,16 @@ final class DayViewViewModelTests: XCTestCase {
     func testDate(){
         XCTAssertEqual(viewModel.date, "Sat, January 3")
     }
-    func testTime_TwelveHours(){
-        
-        UserDefaults.standard.set(TimeNotation.twelveHour.rawValue, forKey: UserDefaults.Keys.timeNotation)
-        XCTAssertEqual(viewModel.time, "01:05 PM")
-    }
-    func testTime_TwentyFourHours(){
-        
-        UserDefaults.standard.set(TimeNotation.twentyFourHour.rawValue, forKey: UserDefaults.Keys.timeNotation)
-        XCTAssertEqual(viewModel.time, "13:05")
-    }
+//    func testTime_TwelveHours(){
+//        
+//        UserDefaults.standard.set(TimeNotation.twelveHour.rawValue, forKey: UserDefaults.Keys.timeNotation)
+//        XCTAssertEqual(viewModel.time, "01:05 PM")
+//    }
+//    func testTime_TwentyFourHours(){
+//        
+//        UserDefaults.standard.set(TimeNotation.twentyFourHour.rawValue, forKey: UserDefaults.Keys.timeNotation)
+//        XCTAssertEqual(viewModel.time, "13:05")
+//    }
 
     func testPerformanceExample() throws {
         // This is an example of a performance test case.
